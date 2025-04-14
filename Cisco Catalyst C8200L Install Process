@@ -1,0 +1,9 @@
+enable
+show usb0:
+copy usb0:C8200/c8000be-universalk9.17.15.02a.SPA.bin flash:
+c8000be-universalk9.17.15.02a.SPA.bin
+conf t
+boot system flash:c8000be-universalk9.17.15.02a.SPA.bin
+exit
+copy running-config startup-config 
+reload
